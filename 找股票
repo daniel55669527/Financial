@@ -1,0 +1,6 @@
+import pandas_datareader.data as web
+import datetime as dt #dt=日期
+start = dt.datetime(2020,1,1)
+end = dt.datetime(2020,3,1)
+df= web.DataReader('tsla','yahoo',start,end)
+df.to_csv('apple.csv') #存檔到excel
